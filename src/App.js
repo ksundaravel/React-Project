@@ -32,7 +32,7 @@ function App() {
               />	
 			   <Route path="/details/:id/:type" element={<MovieDetails />} />
 			   <Route path="/book/:id/:type" element={<Booking />} />
-			   <Route path="/success/:id/:type" element={<FinalBooking />} />		             
+			   <Route path="/success/:bookedid" element={<FinalBooking />} />		             
               {/* <Route path="*" element={<PageNotFound />} /> */}
               <Route path="*" element={<Navigate to="/" />} />
             </Routes>

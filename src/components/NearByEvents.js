@@ -9,7 +9,7 @@ function UpcommingMovies() {
 	const events = useSelector(state => state.movies.events);
 
 
-	let arrayDataItems;
+	let arrayDataItems="";
 	if(events){
 		arrayDataItems = events.map(list =>
 			<div key={list.id} className='col-sm-3 mb-3 mb-sm-0'>

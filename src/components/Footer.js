@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 function Footer() {
 	return (
 		<>
@@ -25,24 +27,24 @@ function Footer() {
 							<h5>Follow Us</h5> 
 							<ul className="list-inline footer-links"> 
 								<li className="list-inline-item"> 
-									<a> 
+									<Link> 
 										<i className="fab fa-facebook"></i> 
-									</a> 
+									</Link> 
 								</li> 
 								<li className="list-inline-item"> 
-									<a> 
+									<Link> 
 										<i className="fab fa-twitter"></i> 
-									</a> 
+									</Link> 
 								</li> 
 								<li className="list-inline-item"> 
-									<a> 
+									<Link> 
 										<i className="fab fa-instagram"></i> 
-									</a> 
+									</Link> 
 								</li> 
 								<li className="list-inline-item"> 
-									<a> 
+									<Link>
 										<i className="fab fa-linkedin"></i> 
-									</a> 
+									</Link> 
 								</li> 
 							</ul> 
 						</div> 
@@ -55,13 +57,13 @@ function Footer() {
 						<div className="col-md-6 text-end"> 
 							<ul className="list-inline footer-links"> 
 								<li className="list-inline-item"> 
-									<a>Privacy Policy</a> 
+									<Link>Privacy Policy</Link> 
 								</li> 
 								<li className="list-inline-item"> 
-									<a>Terms of Service</a> 
+									<Link>Terms of Service</Link> 
 								</li> 
 								<li className="list-inline-item"> 
-									<a>Sitemap</a> 
+									<Link>Sitemap</Link> 
 								</li> 
 							</ul> 
 						</div> 

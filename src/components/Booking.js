@@ -9,19 +9,19 @@ function Booking(){
 	const { id,type } = useParams();
 	const dispatch = useDispatch();
 	const movie = useSelector(state => state.movies.current);
+	const currentBooked = useSelector(state => state.movies.currentBooked);
 	const [tickets, setTickets] = useState(1);
 	const [time, setTime] = useState("00");
 
 	
-
 	const handleBooking = () => {
-    if (movie.availableTickets >= tickets) {
-      dispatch(bookTickets({ id: movie.id, tickets, type: type, time }));     
-	  navigate(`/success/${id}/${type}`);
-    } else {
-      alert(`Only ${movie.availableTickets} tickets are available`);
-    }
-  };
+		if (movie.availableTickets >= tickets) {
+		dispatch(bookTickets({id: new Date().getUTCMilliseconds().toString(), movieId: movie.id, tickets, type: type, time }));
+		
+		} else {
+		alert(`Only ${movie.availableTickets} tickets are available`);
+		}
+	};
   
 	useEffect(() => {
 		if(type==="latest") { dispatch(fetchLatestMovie(id))};
@@ -32,6 +32,12 @@ function Booking(){
 	if (!movie) {
 	  return <div>Loading...</div>;
 	}
+
+	
+	  if(currentBooked){
+		navigate(`/success/${currentBooked}`);
+	  }	 
+
   
 	return (
 		<>

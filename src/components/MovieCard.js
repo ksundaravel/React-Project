@@ -13,8 +13,7 @@ function MovieCard(props) {
 					<p className="card-text">{details}</p>					
 				</div>
 				<div className="card-footer">
-					<Link to={`/details/${id}/${type}`}><button className="btn btn-warning me-1">Details</button></Link>
-					
+					<Link to={`/details/${id}/${type}`}><button className="btn btn-warning me-1">Details</button></Link>					
 					<Link to={`/book/${id}/${type}`}><button className="btn btn-success">Book</button></Link>
 				</div>
 			</div>
