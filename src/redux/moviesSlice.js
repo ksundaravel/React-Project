@@ -32,6 +32,11 @@ export const fetchUpcommingMovies = createAsyncThunk('movies/fetchUpcommingMovie
 	return response.data;
   });
 
+  export const bookTickets = createAsyncThunk('movies/bookTickets', async ({ id, tickets, type, time }) => {
+	await axios.post('http://localhost:4000/book', { id, tickets, type , time});
+	return { id, tickets };
+  });
+
 const moviesSlice = createSlice({
 	name: 'movies',
 	initialState: {

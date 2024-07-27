@@ -12,11 +12,11 @@ function NavigationBar() {
 		</div>
 	</div>
 	
-      <nav className="navbar navbar-expand-lg bg-body-tertiary">
+      <nav className="navbar navbar-expand-lg bg-success my-1  fw-bold text-white">
         <div className="container-fluid">
-		  <a href="#" aria-current="page">
+		  <div>
             Booking Movike Tickets
-          </a>
+          </div>
           <button
             className="navbar-toggler"
             type="button"
@@ -30,18 +30,18 @@ function NavigationBar() {
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li className="nav-item">
+              <li className="nav-item ">
                 <Link to="/" className="nav-link active" aria-current="page">
                   Latest Movies
                 </Link>
               </li>			 
 			  <li className="nav-item">
-                <Link to="/upcommingmovies" className="nav-link active" aria-current="page">
+                <Link to="/upcommingmovies" className="nav-link" aria-current="page">
                   Upcomming Movies
                 </Link>
               </li>
 			  <li className="nav-item">
-                <Link to="/nearybyevents" className="nav-link active" aria-current="page">
+                <Link to="/nearybyevents" className="nav-link" aria-current="page">
                   Nearby Events
                 </Link>
               </li>		

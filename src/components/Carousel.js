@@ -4,13 +4,13 @@ function Carousel() {
 			<div id="carouselExample" className="carousel slide">
 				<div className="carousel-inner">
 					<div className="carousel-item active">
-						<img src="./assets/slider-1.avif" className="d-block w-100" alt="..."/>
+						<img src="/assets/slider-1.avif" className="d-block w-100" alt="Movie Slide 1"/>
 					</div>
 					<div className="carousel-item">
-						<img src="./assets/slider-2.avif" className="d-block w-100" alt="..." />
+						<img src="/assets/slider-2.avif" className="d-block w-100" alt="Movie Slide 2" />
 					</div>
 					<div className="carousel-item">
-						<img src="./assets/slider-3.avif" className="d-block w-100" alt="..." />
+						<img src="/assets/slider-3.avif" className="d-block w-100" alt="Movie Slide 3" />
 					</div>
 				</div>
 				<button className="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">

@@ -7,6 +7,8 @@ import UpcommingMovies from './components/UpcommingMovies';
 import Carousel from './components/Carousel';
 import MovieDetails from './components/MovieDetails';
 import Booking from './components/Booking';
+import Footer from './components/Footer';
+import FinalBooking from './components/FinalBooking';
 
 function App() {
   return (
@@ -28,13 +30,15 @@ function App() {
                 path="/nearybyevents"
                 element={<NearByEvents />}
               />	
-			   <Route path="/details/:id" element={<MovieDetails />} />
-			   <Route path="/book/:id" element={<Booking />} />		             
+			   <Route path="/details/:id/:type" element={<MovieDetails />} />
+			   <Route path="/book/:id/:type" element={<Booking />} />
+			   <Route path="/success/:id/:type" element={<FinalBooking />} />		             
               {/* <Route path="*" element={<PageNotFound />} /> */}
               <Route path="*" element={<Navigate to="/" />} />
             </Routes>
           </section>
         </section>
+		<Footer />
     </section>
   );
 }
